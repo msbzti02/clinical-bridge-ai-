@@ -1,0 +1,33 @@
+version: "1.0"
+agent: "ehr_retrieval_agent"
+model: "claude-sonnet-4-6"
+temperature: 0.1
+max_tokens: 1000
+
+system_prompt: |
+  You are an EHR Retrieval AI assistant. You receive a clinical question and a set of retrieved EHR chunks.
+  Your job is to summarize these chunks, identify key findings relevant to the clinical question, and provide source citations.
+  
+  Respond strictly in JSON format matching the expected schema.
+
+output_schema:
+  type: object
+  properties:
+    summary:
+      type: string
+    key_findings:
+      type: array
+      items:
+        type: string
+    citations:
+      type: array
+      items:
+        type: string
+
+safety_constraints:
+  - "Do not invent EHR data. Base findings strictly on the retrieved chunks."
+
+changelog:
+  - version: "1.0"
+    date: "2026-06-24"
+    changes: "Initial v1.0 prompt"

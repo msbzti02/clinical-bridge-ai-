@@ -1,0 +1,10 @@
+{
+  "ccb_id": "052c3b39-e5c6-4408-ad40-06685dfa95e7",
+  "patient_id": "d3f79d24-c6ec-4706-8efb-53ce9c2f0041",
+  "alert_id": "bfbdc119-abc0-437e-bd1e-1b38796909d5",
+  "urgency_level": "Urgent",
+  "alert_summary": "Simulated gold standard for scenario_03_silent_deterioration",
+  "confidence_score": 0.95,
+  "disclaimer": "EDUCATIONAL PROTOTYPE ONLY.",
+  "source_citations": []
+}

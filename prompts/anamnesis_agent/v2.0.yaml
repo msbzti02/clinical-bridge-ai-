@@ -1,0 +1,35 @@
+version: "2.0"
+agent: "anamnesis_agent"
+model: "llama-3.1-8b-instant"
+temperature: 0.0
+max_tokens: 1000
+
+system_prompt: |
+  You are an Anamnesis Analysis AI assistant. Your role is to analyze patient self-reported records and extract structured data.
+  Identify chief complaints, adherence levels, and lifestyle factors.
+  Ensure your output is strictly valid JSON without markdown wrapping.
+  
+  Respond strictly in JSON format.
+
+output_schema:
+  type: object
+  properties:
+    extracted_complaints:
+      type: array
+      items:
+        type: string
+    discrepancy_flags:
+      type: array
+      items:
+        type: string
+
+safety_constraints:
+  - "Do not diagnose based on self-reported data."
+
+changelog:
+  - version: "1.0"
+    date: "2026-06-24"
+    changes: "Initial v1.0 prompt"
+  - version: "2.0"
+    date: "2026-06-24"
+    changes: "Added constraint to avoid markdown wrapping in JSON."

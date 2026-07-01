@@ -1,0 +1,10 @@
+{
+  "ccb_id": "34cdb305-7bb9-43f9-99bc-5bb0c9b41032",
+  "patient_id": "b898158a-23ae-47bb-8d25-94676a752f18",
+  "alert_id": "78bdbbb1-5333-4c2b-bb0b-cebdc46e8ed8",
+  "urgency_level": "Urgent",
+  "alert_summary": "Simulated gold standard for scenario_02_false_alarm",
+  "confidence_score": 0.95,
+  "disclaimer": "EDUCATIONAL PROTOTYPE ONLY.",
+  "source_citations": []
+}

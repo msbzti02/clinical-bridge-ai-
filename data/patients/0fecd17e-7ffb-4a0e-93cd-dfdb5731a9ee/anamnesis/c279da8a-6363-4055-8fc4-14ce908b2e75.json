@@ -1,0 +1,20 @@
+{
+  "record_id": "c279da8a-6363-4055-8fc4-14ce908b2e75",
+  "patient_id": "0fecd17e-7ffb-4a0e-93cd-dfdb5731a9ee",
+  "record_type": "intake_form",
+  "content_text": "I have been feeling okay lately, but sometimes I get a bit tired when managing my DM2. I try to eat healthy but it's hard.",
+  "structured_fields": {
+    "chief_complaint": "Fatigue",
+    "symptom_onset": null,
+    "medications_reported": null,
+    "adherence_self_reported": null,
+    "lifestyle_factors": {
+      "diet": "Average",
+      "exercise": "Occasional",
+      "alcohol": null,
+      "smoking": null
+    }
+  },
+  "collection_date": "2026-06-17T17:24:26.227799",
+  "collection_method": "simulated"
+}

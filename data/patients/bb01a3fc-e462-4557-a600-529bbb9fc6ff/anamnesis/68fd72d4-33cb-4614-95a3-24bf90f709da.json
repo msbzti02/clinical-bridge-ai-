@@ -1,0 +1,20 @@
+{
+  "record_id": "68fd72d4-33cb-4614-95a3-24bf90f709da",
+  "patient_id": "bb01a3fc-e462-4557-a600-529bbb9fc6ff",
+  "record_type": "intake_form",
+  "content_text": "I have been feeling okay lately, but sometimes I get a bit tired when managing my HTN. I try to eat healthy but it's hard.",
+  "structured_fields": {
+    "chief_complaint": "Fatigue",
+    "symptom_onset": null,
+    "medications_reported": null,
+    "adherence_self_reported": null,
+    "lifestyle_factors": {
+      "diet": "Average",
+      "exercise": "Occasional",
+      "alcohol": null,
+      "smoking": null
+    }
+  },
+  "collection_date": "2026-06-17T17:24:26.226021",
+  "collection_method": "simulated"
+}

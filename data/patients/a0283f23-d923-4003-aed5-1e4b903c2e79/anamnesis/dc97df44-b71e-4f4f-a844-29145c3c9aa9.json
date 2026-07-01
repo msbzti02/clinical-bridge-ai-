@@ -1,0 +1,20 @@
+{
+  "record_id": "dc97df44-b71e-4f4f-a844-29145c3c9aa9",
+  "patient_id": "a0283f23-d923-4003-aed5-1e4b903c2e79",
+  "record_type": "intake_form",
+  "content_text": "I have been feeling okay lately, but sometimes I get a bit tired when managing my HF. I try to eat healthy but it's hard.",
+  "structured_fields": {
+    "chief_complaint": "Fatigue",
+    "symptom_onset": null,
+    "medications_reported": null,
+    "adherence_self_reported": null,
+    "lifestyle_factors": {
+      "diet": "Average",
+      "exercise": "Occasional",
+      "alcohol": null,
+      "smoking": null
+    }
+  },
+  "collection_date": "2026-06-17T17:24:26.230120",
+  "collection_method": "simulated"
+}

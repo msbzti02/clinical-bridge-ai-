@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "anamnesis_record_schema.json",
+  "type": "object",
+  "required": ["record_id", "patient_id", "record_type", "content_text", "collection_date"],
+  "properties": {
+    "record_id": {"type": "string", "format": "uuid"},
+    "patient_id": {"type": "string", "format": "uuid"},
+    "record_type": {
+      "type": "string",
+      "enum": ["intake_form", "symptom_diary", "medication_adherence_log"]
+    },
+    "content_text": {
+      "type": "string",
+      "description": "Patient-voice narrative text; minimum 50 characters",
+      "minLength": 50
+    },
+    "structured_fields": {
+      "type": "object",
+      "properties": {
+        "chief_complaint": {"type": "string"},
+        "symptom_onset": {"type": "string"},
+        "medications_reported": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "adherence_self_reported": {
+          "type": "object",
+          "additionalProperties": {"type": "boolean"}
+        },
+        "lifestyle_factors": {
+          "type": "object",
+          "properties": {
+            "diet": {"type": "string"},
+            "exercise": {"type": "string"},
+            "alcohol": {"type": "string"},
+            "smoking": {"type": "string"}
+          }
+        }
+      }
+    },
+    "collection_date": {"type": "string", "format": "date-time"},
+    "collection_method": {
+      "type": "string",
+      "enum": ["intake_form", "phone_interview", "patient_portal", "simulated"]
+    }
+  }
+}

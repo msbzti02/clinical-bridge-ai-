@@ -1,0 +1,10 @@
+{
+  "ccb_id": "16460da5-d1b3-4d18-ab95-ddb1edb84e46",
+  "patient_id": "70fc112f-bef7-46d8-ae59-0948c39304a6",
+  "alert_id": "508a2941-1062-410c-9a99-5c480804dca4",
+  "urgency_level": "Urgent",
+  "alert_summary": "Simulated gold standard for scenario_04_incomplete_record",
+  "confidence_score": 0.95,
+  "disclaimer": "EDUCATIONAL PROTOTYPE ONLY.",
+  "source_citations": []
+}

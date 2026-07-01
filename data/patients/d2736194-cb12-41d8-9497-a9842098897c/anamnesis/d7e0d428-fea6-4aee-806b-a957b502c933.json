@@ -1,0 +1,20 @@
+{
+  "record_id": "d7e0d428-fea6-4aee-806b-a957b502c933",
+  "patient_id": "d2736194-cb12-41d8-9497-a9842098897c",
+  "record_type": "intake_form",
+  "content_text": "I have been feeling okay lately, but sometimes I get a bit tired when managing my CKD. I try to eat healthy but it's hard.",
+  "structured_fields": {
+    "chief_complaint": "Fatigue",
+    "symptom_onset": null,
+    "medications_reported": null,
+    "adherence_self_reported": null,
+    "lifestyle_factors": {
+      "diet": "Average",
+      "exercise": "Occasional",
+      "alcohol": null,
+      "smoking": null
+    }
+  },
+  "collection_date": "2026-06-17T17:24:26.232059",
+  "collection_method": "simulated"
+}

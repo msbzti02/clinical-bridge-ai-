@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "rpm_alert_schema.json",
+  "type": "object",
+  "required": ["alert_id", "patient_id", "timestamp", "device_type", "measured_values", "alert_category", "baseline_thresholds"],
+  "properties": {
+    "alert_id": {"type": "string", "format": "uuid"},
+    "patient_id": {"type": "string", "format": "uuid"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "device_type": {
+      "type": "string",
+      "enum": ["blood_pressure_monitor", "glucometer", "weight_scale", "pulse_oximeter", "ecg_patch", "activity_tracker"]
+    },
+    "device_id": {"type": "string"},
+    "measured_values": {
+      "type": "object",
+      "description": "Key-value pairs of measurement name to numeric value",
+      "additionalProperties": {"type": "number"}
+    },
+    "alert_category": {"type": "string"},
+    "baseline_thresholds": {
+      "type": "object",
+      "description": "Per-metric threshold ranges: {metric: {low: float, high: float}}"
+    },
+    "raw_trend_window": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {"type": "string", "format": "date-time"},
+          "values": {"type": "object"}
+        }
+      },
+      "description": "Last 7–14 readings for trend analysis"
+    }
+  }
+}

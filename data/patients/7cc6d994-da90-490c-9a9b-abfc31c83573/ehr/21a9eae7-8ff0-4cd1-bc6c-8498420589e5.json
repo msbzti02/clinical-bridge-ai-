@@ -1,0 +1,14 @@
+{
+  "record_id": "21a9eae7-8ff0-4cd1-bc6c-8498420589e5",
+  "patient_id": "7cc6d994-da90-490c-9a9b-abfc31c83573",
+  "record_type": "problem_list",
+  "content": {
+    "condition": "DM2",
+    "status": "active"
+  },
+  "icd10_codes": [
+    "E11.9"
+  ],
+  "timestamp": "2025-06-24T17:24:26.217513",
+  "source_facility": "Primary Care Clinic"
+}

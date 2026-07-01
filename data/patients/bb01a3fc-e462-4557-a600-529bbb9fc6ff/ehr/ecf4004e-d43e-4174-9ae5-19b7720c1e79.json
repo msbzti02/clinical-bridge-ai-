@@ -1,0 +1,14 @@
+{
+  "record_id": "ecf4004e-d43e-4174-9ae5-19b7720c1e79",
+  "patient_id": "bb01a3fc-e462-4557-a600-529bbb9fc6ff",
+  "record_type": "problem_list",
+  "content": {
+    "condition": "HTN",
+    "status": "active"
+  },
+  "icd10_codes": [
+    "I10"
+  ],
+  "timestamp": "2025-06-24T17:24:26.225443",
+  "source_facility": "Primary Care Clinic"
+}

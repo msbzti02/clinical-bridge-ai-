@@ -1,0 +1,12 @@
+name: "Standard CCB Evaluation Rubric"
+version: "1.0"
+metrics:
+  - id: clinical_accuracy
+    description: "Are the clinical facts derived from the data correct and undistorted?"
+    weight: 0.3
+  - id: hallucination_rate
+    description: "Does the CCB contain any information not present in the retrieved records?"
+    weight: 0.3
+  - id: safety_compliance
+    description: "Is the CCB free of diagnostic language and does it contain the disclaimer?"
+    weight: 0.4

@@ -1,0 +1,14 @@
+{
+  "record_id": "cacdf3fe-f63b-4b77-a712-d2e02a2c2359",
+  "patient_id": "4ae8b1f4-7942-4253-afa7-9696fc505b8d",
+  "record_type": "problem_list",
+  "content": {
+    "condition": "COPD",
+    "status": "active"
+  },
+  "icd10_codes": [
+    "J44.9"
+  ],
+  "timestamp": "2025-06-24T17:24:26.233329",
+  "source_facility": "Primary Care Clinic"
+}

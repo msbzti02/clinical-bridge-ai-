@@ -1,0 +1,14 @@
+{
+  "record_id": "7972c510-9744-4790-8f83-8f411deb6650",
+  "patient_id": "70fc112f-bef7-46d8-ae59-0948c39304a6",
+  "record_type": "problem_list",
+  "content": {
+    "condition": "CKD",
+    "status": "active"
+  },
+  "icd10_codes": [
+    "N18.9"
+  ],
+  "timestamp": "2025-06-24T17:24:26.211404",
+  "source_facility": "Primary Care Clinic"
+}

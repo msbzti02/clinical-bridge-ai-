@@ -1,0 +1,20 @@
+{
+  "record_id": "59dfecd1-ba55-4984-8611-033ebd244683",
+  "patient_id": "4ae8b1f4-7942-4253-afa7-9696fc505b8d",
+  "record_type": "intake_form",
+  "content_text": "I have been feeling okay lately, but sometimes I get a bit tired when managing my COPD. I try to eat healthy but it's hard.",
+  "structured_fields": {
+    "chief_complaint": "Fatigue",
+    "symptom_onset": null,
+    "medications_reported": null,
+    "adherence_self_reported": null,
+    "lifestyle_factors": {
+      "diet": "Average",
+      "exercise": "Occasional",
+      "alcohol": null,
+      "smoking": null
+    }
+  },
+  "collection_date": "2026-06-17T17:24:26.233909",
+  "collection_method": "simulated"
+}

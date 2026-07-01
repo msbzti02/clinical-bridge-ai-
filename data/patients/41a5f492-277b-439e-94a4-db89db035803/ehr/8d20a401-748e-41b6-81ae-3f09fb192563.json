@@ -1,0 +1,9 @@
+{
+  "record_id": "8d20a401-748e-41b6-81ae-3f09fb192563",
+  "patient_id": "41a5f492-277b-439e-94a4-db89db035803",
+  "record_type": "visit_note",
+  "content": "Patient presents for routine follow-up of HTN. Vitals stable. Continue current management plan.",
+  "icd10_codes": null,
+  "timestamp": "2026-05-25T17:24:26.215729",
+  "source_facility": "Primary Care Clinic"
+}

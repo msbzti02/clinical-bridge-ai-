@@ -1,0 +1,10 @@
+{
+  "ccb_id": "8d31d9d2-88cd-4c03-94f1-3ab9e841dfe0",
+  "patient_id": "f42a7636-00fa-4ffc-8cdd-d7edb066ed25",
+  "alert_id": "4d4c6347-b6ee-45f1-966c-e41114beddc2",
+  "urgency_level": "Urgent",
+  "alert_summary": "Simulated gold standard for scenario_01_missed_medication",
+  "confidence_score": 0.95,
+  "disclaimer": "EDUCATIONAL PROTOTYPE ONLY.",
+  "source_citations": []
+}

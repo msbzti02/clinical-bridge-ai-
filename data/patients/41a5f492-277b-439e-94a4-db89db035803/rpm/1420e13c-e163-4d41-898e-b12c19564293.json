@@ -1,0 +1,23 @@
+{
+  "alert_id": "1420e13c-e163-4d41-898e-b12c19564293",
+  "patient_id": "41a5f492-277b-439e-94a4-db89db035803",
+  "timestamp": "2026-06-22T17:24:26.216458",
+  "device_type": "blood_pressure_monitor",
+  "device_id": null,
+  "measured_values": {
+    "systolic_bp": 139.0,
+    "diastolic_bp": 90.0
+  },
+  "alert_category": "ELEVATED",
+  "baseline_thresholds": {
+    "systolic_bp": {
+      "low": 90.0,
+      "high": 140.0
+    },
+    "diastolic_bp": {
+      "low": 60.0,
+      "high": 90.0
+    }
+  },
+  "raw_trend_window": null
+}

@@ -1,0 +1,9 @@
+{
+  "record_id": "8119d511-c1f1-4cda-b8e0-eb4cc2f75e24",
+  "patient_id": "0fecd17e-7ffb-4a0e-93cd-dfdb5731a9ee",
+  "record_type": "visit_note",
+  "content": "Patient presents for routine follow-up of DM2. Vitals stable. Continue current management plan.",
+  "icd10_codes": null,
+  "timestamp": "2026-05-25T17:24:26.227525",
+  "source_facility": "Primary Care Clinic"
+}

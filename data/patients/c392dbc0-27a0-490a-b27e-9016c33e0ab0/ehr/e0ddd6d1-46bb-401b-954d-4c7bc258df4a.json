@@ -1,0 +1,9 @@
+{
+  "record_id": "e0ddd6d1-46bb-401b-954d-4c7bc258df4a",
+  "patient_id": "c392dbc0-27a0-490a-b27e-9016c33e0ab0",
+  "record_type": "visit_note",
+  "content": "Patient presents for routine follow-up of HF. Vitals stable. Continue current management plan.",
+  "icd10_codes": null,
+  "timestamp": "2026-05-25T17:24:26.219734",
+  "source_facility": "Primary Care Clinic"
+}

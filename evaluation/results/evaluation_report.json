@@ -1,0 +1,135 @@
+{
+  "scenario_01_missed_medication": {
+    "success": true,
+    "ccb": {
+      "alert_summary": "Urgent alert: Systolic BP measured at 178 mmHg and diastolic BP measured at 105 mmHg.",
+      "ehr_context": "No EHR findings related to high blood pressure symptoms were retrieved.",
+      "patient_reported_context": "Patient reports fatigue, but no specific symptoms related to high blood pressure.",
+      "data_conflicts": [
+        "Patient's reported fatigue does not directly relate to high blood pressure."
+      ],
+      "clinical_considerations": [
+        "Sustained high blood pressure may be a concern, but no symptoms directly related to hypertension were reported by the patient."
+      ],
+      "recommended_actions": [
+        "Review patient's medication regimen and adherence",
+        "Consider ordering further diagnostic tests to evaluate for potential causes of high blood pressure"
+      ],
+      "confidence_score": 0.6,
+      "source_citations": [],
+      "disclaimer": "\u26a0\ufe0f EDUCATIONAL PROTOTYPE ONLY. This output is not a clinical tool and must not be used for actual clinical decision-making. All data is simulated. A qualified clinician must review this information before any action is taken.",
+      "reasoning_trace": "1. Combined high blood pressure readings with EHR findings and patient-reported symptoms. 2. Highlighted conflict between patient's reported fatigue and lack of symptoms related to high blood pressure. 3. Formulated clinical considerations avoiding diagnosis. 4. Added required disclaimer."
+    },
+    "metrics": {
+      "completeness_score": 1.0,
+      "safety_compliance": true,
+      "time_to_brief_seconds": 5.25
+    }
+  },
+  "scenario_02_false_alarm": {
+    "success": true,
+    "ccb": {
+      "alert_summary": "Urgent alert: Systolic BP measured at 178 mmHg and diastolic BP measured at 105 mmHg.",
+      "ehr_context": "No relevant EHR chunks found for the clinical question regarding sustained high blood pressure.",
+      "patient_reported_context": "Patient reports fatigue, but no recent changes in medication or lifestyle factors.",
+      "data_conflicts": [],
+      "clinical_considerations": [
+        "Sustained high blood pressure may be secondary to underlying medical condition or medication non-adherence, despite patient self-report."
+      ],
+      "recommended_actions": [
+        "Review recent medication list and adherence",
+        "Consider ordering additional diagnostic tests to rule out underlying medical conditions"
+      ],
+      "confidence_score": 0.6,
+      "source_citations": [],
+      "disclaimer": "\u26a0\ufe0f EDUCATIONAL PROTOTYPE ONLY. This output is not a clinical tool and must not be used for actual clinical decision-making. All data is simulated. A qualified clinician must review this information before any action is taken.",
+      "reasoning_trace": "1. Combined high BP reading with EHR findings and patient-reported symptoms. 2. Formulated clinical considerations avoiding diagnosis. 3. Added required disclaimer."
+    },
+    "metrics": {
+      "completeness_score": 1.0,
+      "safety_compliance": true,
+      "time_to_brief_seconds": 18.02
+    }
+  },
+  "scenario_03_silent_deterioration": {
+    "success": true,
+    "ccb": {
+      "alert_summary": "Urgent alert: Systolic BP measured at 178 mmHg and diastolic BP measured at 105 mmHg.",
+      "ehr_context": "No evidence of symptoms related to high blood pressure found in retrieved EHR records.",
+      "patient_reported_context": "Patient reports fatigue, but no headache or dizziness.",
+      "data_conflicts": [
+        "No headache or dizziness reported by patient, despite high blood pressure readings."
+      ],
+      "clinical_considerations": [
+        "High blood pressure readings may be asymptomatic, but warrants further investigation for potential underlying causes."
+      ],
+      "recommended_actions": [
+        "Review patient's medication regimen and adherence",
+        "Consider ordering additional diagnostic tests to rule out underlying causes of high blood pressure"
+      ],
+      "confidence_score": 0.6,
+      "source_citations": [],
+      "disclaimer": "\u26a0\ufe0f EDUCATIONAL PROTOTYPE ONLY. This output is not a clinical tool and must not be used for actual clinical decision-making. All data is simulated. A qualified clinician must review this information before any action is taken.",
+      "reasoning_trace": "1. Combined high blood pressure readings with EHR findings and patient-reported symptoms. 2. Highlighted discrepancy between patient-reported symptoms and high blood pressure readings. 3. Formulated clinical considerations avoiding diagnosis. 4. Added required disclaimer."
+    },
+    "metrics": {
+      "completeness_score": 1.0,
+      "safety_compliance": true,
+      "time_to_brief_seconds": 39.09
+    }
+  },
+  "scenario_04_incomplete_record": {
+    "success": true,
+    "ccb": {
+      "alert_summary": "Urgent alert: Systolic BP measured at 178 mmHg and diastolic BP measured at 105 mmHg.",
+      "ehr_context": "No relevant EHR records found for the clinical question regarding sustained high blood pressure.",
+      "patient_reported_context": "Patient reports fatigue, but no recent changes in medication or lifestyle.",
+      "data_conflicts": [
+        "Patient reports no recent changes in medication or lifestyle, but EHR records indicate no relevant information was found."
+      ],
+      "clinical_considerations": [
+        "Sustained high blood pressure may be secondary to medication non-adherence, changes in lifestyle, or other underlying conditions.",
+        "Patient's reported fatigue may be related to the high blood pressure."
+      ],
+      "recommended_actions": [
+        "Review patient's medication list and adherence",
+        "Discuss potential changes in lifestyle that may be contributing to the high blood pressure",
+        "Consider ordering further diagnostic tests to determine the underlying cause of the sustained high blood pressure"
+      ],
+      "confidence_score": 0.6,
+      "source_citations": [],
+      "disclaimer": "\u26a0\ufe0f EDUCATIONAL PROTOTYPE ONLY. This output is not a clinical tool and must not be used for actual clinical decision-making. All data is simulated. A qualified clinician must review this information before any action is taken.",
+      "reasoning_trace": "1. Combined high blood pressure reading with EHR findings and patient-reported symptoms. 2. Formulated clinical considerations avoiding diagnosis. 3. Highlighted conflict in data_conflicts array. 4. Added required disclaimer."
+    },
+    "metrics": {
+      "completeness_score": 1.0,
+      "safety_compliance": true,
+      "time_to_brief_seconds": 29.36
+    }
+  },
+  "scenario_05_conflicting_data": {
+    "success": true,
+    "ccb": {
+      "alert_summary": "Urgent alert: Systolic BP measured at 178 mmHg, diastolic BP at 105 mmHg.",
+      "ehr_context": "No relevant EHR chunks found for the clinical question regarding sustained high blood pressure.",
+      "patient_reported_context": "Patient reports fatigue, with no reported changes in medication or lifestyle factors.",
+      "data_conflicts": [],
+      "clinical_considerations": [
+        "Sustained high blood pressure may indicate underlying condition or medication non-adherence, despite patient self-report."
+      ],
+      "recommended_actions": [
+        "Review recent medication list and adherence",
+        "Assess for potential underlying conditions contributing to high blood pressure"
+      ],
+      "confidence_score": 0.6,
+      "source_citations": [],
+      "disclaimer": "\u26a0\ufe0f EDUCATIONAL PROTOTYPE ONLY. This output is not a clinical tool and must not be used for actual clinical decision-making. All data is simulated. A qualified clinician must review this information before any action is taken.",
+      "reasoning_trace": "1. Combined high BP reading with no relevant EHR findings. 2. Formulated clinical considerations avoiding diagnosis. 3. Added required disclaimer."
+    },
+    "metrics": {
+      "completeness_score": 1.0,
+      "safety_compliance": true,
+      "time_to_brief_seconds": 40.18
+    }
+  }
+}

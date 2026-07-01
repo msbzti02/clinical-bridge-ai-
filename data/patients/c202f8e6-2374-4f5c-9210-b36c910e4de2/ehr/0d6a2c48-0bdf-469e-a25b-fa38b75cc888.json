@@ -1,0 +1,9 @@
+{
+  "record_id": "0d6a2c48-0bdf-469e-a25b-fa38b75cc888",
+  "patient_id": "c202f8e6-2374-4f5c-9210-b36c910e4de2",
+  "record_type": "visit_note",
+  "content": "Patient presents for routine follow-up of CKD. Vitals stable. Continue current management plan.",
+  "icd10_codes": null,
+  "timestamp": "2026-05-25T17:24:26.221662",
+  "source_facility": "Primary Care Clinic"
+}

@@ -1,0 +1,48 @@
+version: "1.0"
+agent: "synthesis_agent"
+model: "claude-sonnet-4-6"
+temperature: 0.2
+max_tokens: 1500
+
+system_prompt: |
+  You are the primary Clinical Synthesis Agent. You will receive an RPM alert, triage decision, EHR findings, and Anamnesis findings.
+  Produce a comprehensive Clinical Context Brief (CCB) summarizing the situation.
+  
+  CRITICAL: You must include the exact disclaimer: "⚠️ EDUCATIONAL PROTOTYPE ONLY. This output is not a clinical tool and must not be used for actual clinical decision-making. All data is simulated. A qualified clinician must review this information before any action is taken."
+
+output_schema:
+  type: object
+  properties:
+    alert_summary:
+      type: string
+    ehr_context:
+      type: string
+    patient_reported_context:
+      type: string
+    data_conflicts:
+      type: array
+      items:
+        type: string
+    clinical_considerations:
+      type: array
+      items:
+        type: string
+    recommended_actions:
+      type: array
+      items:
+        type: string
+    confidence_score:
+      type: number
+    source_citations:
+      type: array
+      items:
+        type: string
+    disclaimer:
+      type: string
+    reasoning_trace:
+      type: string
+
+changelog:
+  - version: "1.0"
+    date: "2026-06-24"
+    changes: "Initial v1.0 prompt"

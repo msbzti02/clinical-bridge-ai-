@@ -1,0 +1,9 @@
+{
+  "record_id": "656b6ede-8c13-4eb6-a577-b906b44609ce",
+  "patient_id": "fab89226-a7c8-4315-ad59-a587d227a569",
+  "record_type": "visit_note",
+  "content": "Patient presents for routine follow-up of COPD. Vitals stable. Continue current management plan.",
+  "icd10_codes": null,
+  "timestamp": "2026-05-25T17:24:26.223781",
+  "source_facility": "Primary Care Clinic"
+}
